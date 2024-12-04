@@ -1,0 +1,21 @@
+.btnAtualizar {
+    margin-right: 15px;
+}
+
+.table {
+    vertical-align: middle;
+}
+
+.btnAdicionar, .btnAdicionar a , .btnVoltar, .btnVoltar a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.formStyle input, .formStyle select, .formNivelStyle input {
+    border: solid 1px black !important;
+}
+
+.formNivelStyle button{
+    margin-right: 5px;
+}
+

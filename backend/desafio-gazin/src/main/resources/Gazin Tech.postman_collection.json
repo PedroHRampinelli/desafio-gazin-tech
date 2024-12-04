@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "119f7e37-cf3c-44a1-96cf-fa5a5e271e31",
+		"name": "Gazin Tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28239621"
+	},
+	"item": [
+		{
+			"name": "Desenvolvedor",
+			"item": [
+				{
+					"name": "createDesenvolvedor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nivelId\": 1,\r\n  \"nome\": \"Pedro Henrique\",\r\n  \"sexo\": \"M\",\r\n  \"dataNascimento\": \"1999-11-06\",\r\n  \"hobby\": \"Violão\",\r\n  \"idade\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/desenvolvedores",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"desenvolvedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDesenvolvedores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/desenvolvedores?page=0&size=50",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"desenvolvedores"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDesenvovledores",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/desenvolvedores/1",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"desenvolvedores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDesenvolvedores",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Pedro Henrique\",\r\n    \"sexo\": \"M\",\r\n    \"dataNascimento\": \"1999-11-08\",\r\n    \"hobby\": \"Bike\",\r\n    \"nivelId\": 1,\r\n    \"idade\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/desenvolvedores/1",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"desenvolvedores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllDevsByNivel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/desenvolvedores/devByNivel/1",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"desenvolvedores",
+								"devByNivel",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nivel",
+			"item": [
+				{
+					"name": "createNivel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nivel\": \"Junior\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/niveis",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"niveis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNivel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/niveis?page=0&size=50",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"niveis"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateNivel",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nivel\": \"Junior I\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/niveis/1",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"niveis",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteNivel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/niveis/1",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"niveis",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
